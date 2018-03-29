@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+  ~  ------------------------------------------------------------------------------------------------------
+  ~   Copyright © 2017 Continuum
+  ~
+  ~  All rights reserved.
+  ~
+  ~  Redistribution and use in source and binary forms, with or without
+  ~  modification, are permitted provided that the following conditions are met:
+  ~
+  ~    a. Redistributions of source code must retain the above copyright notice,
+  ~       this list of conditions and the following disclaimer.
+  ~    b. Redistributions in binary form must reproduce the above copyright
+  ~       notice, this list of conditions and the following disclaimer in the
+  ~       documentation and/or other materials provided with the distribution.
+  ~    c. Neither the name of Continuum nor the names of its contributors
+  ~       may be used to endorse or promote products derived from this software
+  ~       without specific prior written permission.
+  ~
+  ~
+  ~  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  ~  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  ~  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  ~  ARE DISCLAIMED. IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE FOR
+  ~  ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  ~  DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+  ~  SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+  ~  CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+  ~  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+  ~  OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+  ~  DAMAGE.
+  ~
+  ~  Created by dgoodman 2016
+  ~  ------------------------------------------------------------------------------------------------------
+  ~
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    {% block title %}<title>Local Library</title>{% endblock %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Add additional CSS in static file -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-sm-2">
+          {% block sidebar %}
+          <ul class="sidebar-nav">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="">All books</a></li>
+            <li><a href="">All authors</a></li>
+          </ul>
+          {% endblock %}
+        </div>
+        <div class="col-sm-10 ">
+          {% block content %}{% endblock %}
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

@@ -45,25 +45,24 @@
 import {TODO_ACTIONS} from '../actions/actions';
 
 const initState = {
-  todos: [
-    {id: 1, name: 'Todo 1', isComplete: true},
-    {id: 2, name: 'Todo 2', isComplete: false},
-    {id: 3, name: 'Todo 3', isComplete: false}
-  ],
-
+  todos: [],
   currentTodo: ''
 };
 
 
 export default (state = initState, action) => {
+  console.log('CALLING REDUCER', state);
   switch (action.type) {
     case TODO_ACTIONS.add:
+      console.log('...1');
       return {...state, todos: state.todos.concat(action.payload)};
 
     case TODO_ACTIONS.updateCurrent:
+      console.log('...2');
       return {...state, currentTodo: action.payload};
 
     default:
+      console.log('...3', state);
       return state;
   }
 }

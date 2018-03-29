@@ -42,26 +42,11 @@
 // Created by Adam Casey 2016
 // ------------------------------------------------------------------------------------------------------
 
-import {fetchTodos} from '../services/todo.services';
-
-export const TODO_ACTIONS = {
-  updateCurrent: 'TODO_UPDATE_CURRENT',
-  add: 'TODO_ADD'
-};
-
-export const updateCurrent = (val) => (
-  {type: TODO_ACTIONS.updateCurrent, payload: val}
-);
-
-export const addTodo = (val) => (
-  {type: TODO_ACTIONS.add, payload: val}
-);
-
-export const loadTodos = () => {
-  return () => {
-    fetchTodos()
-      .then(
-        todos => console.log('got todos', todos)
-      );
-  };
+export const fetchTodos = () => {
+  return fetch('http://localhost:8000/todos/')
+    .then(res => {
+      var json = res.json();
+      console.log('got todos', json);
+      return json;
+    });
 };

@@ -41,8 +41,9 @@
 
 // Created by Adam Casey 2016
 // ------------------------------------------------------------------------------------------------------
-import React from 'react';
+import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import {loadTodos} from '../actions/actions'
 
 const TodoItem = ({id, name, isComplete}) => (
   <li>
@@ -51,16 +52,23 @@ const TodoItem = ({id, name, isComplete}) => (
   </li>
 );
 
-const TodoList =  (props) => {
-  return (
-    <div className="todo-list">
-      <ul>
-        {props.todos.map(todo => <TodoItem key={todo.id} {...todo} />)}
-      </ul>
-    </div>
-  );
-};
+class TodoList extends Component {
+  componentDidMount(){
+    this.props.loadTodos()
+  }
+
+  render(){
+    return (
+      <div className="todo-list">
+        <ul>
+          {this.props.todos.map(todo => <TodoItem key={todo.id} {...todo} />)}
+        </ul>
+      </div>
+    )
+  }
+}
 
 export default connect(
-  (state) => ({todos: state.todos})
-)(TodoList);
+  (state) => ({todos: state.todos}),
+  {loadTodos}
+)(TodoList)
