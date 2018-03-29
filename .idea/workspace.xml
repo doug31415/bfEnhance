@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec11cac0-ce29-4ba3-a093-618a076f0847" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/reactapp/src/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/reactapp/src/actions/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactapp/src/reducers/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/reactapp/src/reducers/todo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactapp/src/services/todo.services.js" beforeDir="false" afterPath="$PROJECT_DIR$/reactapp/src/services/todo.services.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reactapp/src/todoForm/todoForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/reactapp/src/todoForm/todoForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactapp/src/todoList/todoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/reactapp/src/todoList/todoList.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,42 +16,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="todo.services.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reactapp/src/services/todo.services.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="47" column="24" lean-forward="true" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="todo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reactapp/src/reducers/todo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="58" column="48" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
-              <folding>
-                <element signature="e#2160#2219#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/todos/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="todoList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/reactapp/src/todoList/todoList.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -77,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todoForm.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="todoForm.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/reactapp/src/todoForm/todoForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="61" column="2" lean-forward="true" selection-start-line="61" selection-start-column="2" selection-end-line="61" selection-end-column="2" />
+            <state relative-caret-position="180">
+              <caret line="46" column="55" lean-forward="true" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
               <folding>
                 <element signature="e#2160#2186#0" expanded="true" />
               </folding>
@@ -372,12 +332,12 @@
       <updated>1522254658859</updated>
       <workItem from="1522254670304" duration="25551000" />
       <workItem from="1522349022174" duration="192000" />
-      <workItem from="1522349264380" duration="6152000" />
+      <workItem from="1522349264380" duration="6389000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31895000" />
+    <option name="totallyTimeSpent" value="32132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="35" width="1335" height="1361" extended-state="0" />
@@ -608,32 +568,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reactapp/src/todoForm/todoForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="61" column="2" lean-forward="true" selection-start-line="61" selection-start-column="2" selection-end-line="61" selection-end-column="2" />
-          <folding>
-            <element signature="e#2160#2186#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reactapp/src/todoList/todoList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="49" column="56" lean-forward="true" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
-          <folding>
-            <element signature="e#2159#2198#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reactapp/src/services/todo.services.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="47" column="24" lean-forward="true" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/todos/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -648,12 +598,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/todos/views.py">
+    <entry file="file://$PROJECT_DIR$/reactapp/src/todoList/todoList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state relative-caret-position="225">
+          <caret line="49" column="56" lean-forward="true" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#2159#2198#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reactapp/src/todoForm/todoForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="46" column="55" lean-forward="true" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
+          <folding>
+            <element signature="e#2160#2186#0" expanded="true" />
           </folding>
         </state>
       </provider>

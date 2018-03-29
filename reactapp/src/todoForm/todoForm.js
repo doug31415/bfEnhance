@@ -47,10 +47,10 @@ import {connect} from 'react-redux';
 import {updateCurrentAction} from '../actions/actions';
 
 const TodoForm = (props) => {
-  const {currentTodo, updateCurrent} = props;
+  const {currentTodo, updateCurrentAction} = props;
   const handleInputChange = (evt) => {
     const val = evt.target.value;
-    updateCurrent(val);
+    updateCurrentAction(val);
   };
   return (
     <form>
