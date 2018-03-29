@@ -43,7 +43,7 @@
 // ------------------------------------------------------------------------------------------------------
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {loadTodos} from '../actions/actions'
+import {loadTodos} from '../reducers/todo'
 
 const TodoItem = ({id, name, isComplete}) => (
   <li>

@@ -42,11 +42,24 @@
 // Created by Adam Casey 2016
 // ------------------------------------------------------------------------------------------------------
 
-import {TODO_ACTIONS} from '../actions/actions';
+import {loadTodosAction, TODO_ACTIONS} from '../actions/actions';
+import {listTodos} from '../services/todo.services';
 
 const initState = {
   todos: [],
   currentTodo: ''
+};
+
+export const loadTodos = () => {
+  return (dispatch) => {
+    listTodos()
+      .then(
+        todos => {
+          console.log('...loadTodos', todos);
+          dispatch(loadTodosAction(todos.results));
+        }
+      );
+  };
 };
 
 
@@ -61,8 +74,12 @@ export default (state = initState, action) => {
       console.log('...2');
       return {...state, currentTodo: action.payload};
 
+    case TODO_ACTIONS.load:
+      console.log('...3');
+      return {...state, todos: action.payload};
+
     default:
-      console.log('...3', state);
+      console.log('...default', state);
       return state;
   }
 }

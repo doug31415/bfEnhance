@@ -44,7 +44,7 @@
 
 import React from 'react';
 import {connect} from 'react-redux';
-import {updateCurrent} from '../actions/actions';
+import {updateCurrentAction} from '../actions/actions';
 
 const TodoForm = (props) => {
   const {currentTodo, updateCurrent} = props;
@@ -63,5 +63,5 @@ const TodoForm = (props) => {
 
 export default connect(
   (state) => ({currentTodo: state.currentTodo}),
-  {updateCurrent}
+  {updateCurrentAction}
 )(TodoForm);

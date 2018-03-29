@@ -42,11 +42,9 @@
 // Created by Adam Casey 2016
 // ------------------------------------------------------------------------------------------------------
 
-export const fetchTodos = () => {
+export const listTodos = () => {
   return fetch('http://localhost:8000/todos/')
     .then(res => {
-      var json = res.json();
-      console.log('got todos', json);
-      return json;
+      return res.json();
     });
 };
