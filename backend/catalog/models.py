@@ -69,6 +69,9 @@ class Book(models.Model):
 
   display_genre.short_description = 'Genre'
 
+  class Meta:
+    ordering = ['title', 'author']
+
 
 class BookInstance(models.Model):
   """
@@ -111,8 +114,6 @@ class Author(models.Model):
   date_of_birth = models.DateField(null=True, blank=True)
   date_of_death = models.DateField('Died', null=True, blank=True)
 
-  class Meta:
-    ordering = ["last_name", "first_name"]
 
   def get_absolute_url(self):
     """
@@ -125,3 +126,6 @@ class Author(models.Model):
     String for representing the Model object.
     """
     return '{0}, {1}'.format(self.last_name, self.first_name)
+
+  class Meta:
+    ordering = ['last_name', 'first_name']
